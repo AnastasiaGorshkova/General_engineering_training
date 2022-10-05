@@ -16,6 +16,6 @@ try:
         print(3.3*DutyCicle/100)
 
 finally:
-    GPIO.setup(led, 0)
-    GPIO.setup(dac, 0)
+    GPIO.output(led, 0)
+    GPIO.output(dac, 0)
     GPIO.cleanup()
