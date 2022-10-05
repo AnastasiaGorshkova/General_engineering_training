@@ -22,5 +22,5 @@ try:
 
 
 finally:
-    GPIO.setup(dac, 0)
+    GPIO.output(dac, 0)
     GPIO.cleanup()
