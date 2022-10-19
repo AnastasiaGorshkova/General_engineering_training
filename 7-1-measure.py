@@ -57,9 +57,9 @@ try:
         for i in result_value:
             s.write(str(i)+'\n')
     with open ("settings.txt","w") as s:
-        s.write(str(1/time_measure/count)+'\n')
+        s.write(str(1/(time_measure/count))+'\n')
         s.write('0.01289')
-    print('общая продолжительность эксперимента {}, период одного измерения {}, средняя частота дискретизации проведённых измерений {}, шаг квантования АЦП {}'.format(time_measure, time_measure/count, 1/time_measure/count,3.3/256 ))
+    print('общая продолжительность эксперимента {}, период одного измерения {}, средняя частота дискретизации проведённых измерений {}, шаг квантования АЦП {}'.format(time_measure, time_measure/count, 1/(time_measure/count),3.3/256 ))
     
     # построение графика
     y=[i/256*3.3 for i in result_value]
